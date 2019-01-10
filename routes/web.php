@@ -35,7 +35,10 @@ Auth::routes(['verify' => true]);
 
 
 Route::resource('/superuser/dashboard', 'SuperuserController')->middleware('auth');
+// unverified add controller
 Route::resource('/dashboard/verifyAd', 'SuperuserAdvertisementController');
+
+//admin verify reject add controller
 
 Route::post('/dashboard/verifyAd/verify','SuperuserAdvertisementController@verify');
 Route::post('/dashboard/verifyAd/reject','SuperuserAdvertisementController@reject');

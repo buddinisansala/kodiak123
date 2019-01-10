@@ -1,9 +1,9 @@
 @extends('superuser.layouts.superuserAppad')
 
 @section('content')
-
+    {{-- display the all Unverified off --}}
             <div class="mt-5">
-                <h3>Unverified offers</h3>
+                <h3>Unverified offers</h3> 
                 @if(count($ads) > 0)
                     <div class="row">
                         @foreach ($ads as $ad)

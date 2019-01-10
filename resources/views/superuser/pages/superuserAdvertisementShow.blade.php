@@ -78,7 +78,7 @@
                         if(willDelete){
                             $(".confirm_reject").off("submit").submit();
                     }else{
-                        // swal("Your imaginary file is safe!");
+                        
                         swal('Cancelled', 'Reject Cancelled', 'info');
                     }
                     });
